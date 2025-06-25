@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> <b><u>student ADMISSION FORM</u></b></h1>
+    <form >
+        <label for="name">student name</label>
+        <input type="text" id="name" required minlength="3">
+        <br>
+        <br>
+        <label for="email">email address</label>
+        <input type="email" id="email" required>
+        <br>
+        <br>
+        
+        <label for="dob">date of birth</label>
+        <input type="date" id="dob" required>
+        <br>
+        <br>
+
+        <label for="">Gender</label>
+        <input type="radio" name="gender">male
+        <input type="radio" name="gender">female
+        <br>
+        <br>
+        <label for="">select course</label>
+        <select>
+            <option>MERN SATCK DEVELOPMNET</option>
+            <option>CYBER SECURITY</option>
+            <option>DATA ANALTYICS</option>
+            <option>DATA SCIENCE</option>
+            <option>DATA STRUCTURE</option>
+        </select>
+        <BR>
+        <BR>
+        
+       <label for="">college name</label>
+       <input type="text" list="college">
+       <datalist id="college"> 
+        <!-- this a new tag add in input to guve a list in a form or anything -->
+        <option>cims</option>
+        <option>lucknow university</option>
+        <option>iit</option>
+        <option>bbd</option>
+        <option>imrt</option>
+        
+       </datalist>
+       <br>
+       <br>
+       <label for="">adress</label>
+       <textarea row="5" cols="20"></textarea>
+       <br>
+       <br>   
+       <label for="">i accept terms and conditions</label>  
+       <input type="checkbox">
+       <br>
+       <br>
+       <!-- new tag added i html5 -->
+        <details>
+            <summary> view terms and conditions</summary>
+            <p>Lorem ipsum dolor<mark> sit amet consectetur </mark> elit. Illo quaerat ad, pariatur sunt nisi delectus aut tenetur eligendi odit modi.
+            </p>
+
+        </details>
+
+        
+        <br>
+        <br>
+    
+
+
+        <button type="submit">submit</button>
+
+        
+        
+
+
+
+    </form>
+    
+</body>
+</html>
