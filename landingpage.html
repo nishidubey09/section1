@@ -8,7 +8,8 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="bg-green-500 md:bg-red-300  lg:bg-blue-400">
+    <!-- for medium secreen scize md is used -->
     <header>
         <nav>
 
@@ -17,27 +18,36 @@
     <main>
         <article>
             <section class="">
-                <div class=" container mx-auto grid grid-cols-12 h-[70vh]">
-                    <div class=" col-span-8 space-y-4 my-auto">
-                        <h1 class="text-6xl font-bold">website title</h1>
+                <div class=" container mx-auto grid  grid-cols-1 md:grid-cols-12 h-[70vh]">
+                    <div class=" col-span-8 space-y-4 my-auto order-last md:order-first text-center md:text-left">
+                        <h1 class="text-3xl md:text-6xl font-bold">website title</h1>
                         <p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut accusamus
                             perferendis voluptatem voluptate cumque necessitatibus eaque hic, numquam eos perspiciatis.
                         </p>
-
-                        <div>
-                            <button class="bg-blue-500 text-white py-3 px-4 rounded-md">primary</button>
-                            <button class="bg-blue-500 text-white py-3 px-4 rounded-md">primary</button>
+                        <div class="flex gap-4 justify-center md-justify-start">
+                            <button class="bg-blue-500 hover:bg-blue-700 duration-300 text-white py-3 px-4 rounded-md">primary</button>
+                            <button class="bg-blue-500 text-white py-3 px-4 rounded-md">secondary</button>
                         </div>
-
                     </div>
                     <div class=" col-span-4 my-auto">
-
                         <img
                             src="https://th.bing.com/th/id/OIP.oEUHHT0alGHaTMUz7iY17gHaEx?r=0&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3">
-
                     </div>
                 </div>
-
+            </section>
+        </article>
+        <article>
+            <section class="border-2 border-red-500 bg-white">
+                <h3 class="text-4xl font-bold text-center my-6">feature section</h3>
+                <div class="border-2 border-blue-500 container mx-auto grid grid-cols-3 gap-6">
+                  <div class="border-2 border-yellow-500 p-10 rounded-lg shadow-lg text-center">
+                    <h4 class="text-3xl font-bold">feature title 1</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quos placeat beatae porro, voluptatem quasi et. Recusandae culpa reprehenderit quisquam.</p>
+                    <button class="bg-blue-500 text-white p-3 w-full rounded-md">learn more</button>
+                  </div>
+                  <div class="border-2 border-yellow-500"></div>
+                  <div class="border-2 border-yellow-500"></div>
+                 </div >
             </section>
         </article>
     </main>
