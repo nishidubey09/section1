@@ -4,21 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Parastoo:regular,500,600,700" rel="stylesheet" />
+    <style>
+        .card{
+            border: 1px solid grey;
+            width: 20%;
+            padding: 40px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            box-shadow: 3px 3px 5px 0 black;
+            
+        }
+        body{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(https://images.squarespace-cdn.com/content/v1/63ceaffd33529a45e572bf90/1674497083567-YZP1473PUVPC21UB8G5J/image-asset.jpeg;)
+        }
+        .text-input{
+            width: 100%;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            margin-top: 5px;
+
+        }
+        .submit-btn{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: rebeccapurple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .signup-link{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .forgot-link{
+            text-align: right;
+            
+        }
+        .link{
+            text-decoration: none;
+            color: purple;
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <div class="card">
-        <h2 class="form-title">login forrm</h2>
+        <h2 class="form-title">login form</h2>
         <form>
             <label for="">email adress</label>
             <input type="email" class="text-input">
-            <br>
-            <br>
             <label for="">password</label>
             <input type="password" class="text-input">
-            <br>
-            <br>
-
+            <a href="" class="link forgot-link">forgot password</a>
+           
             <button class="submit-btn">submit</button>
+
+            <a href="" class="link signup-link">not rgistred yet ? sign up</a>
         </form>
 
     </div>
