@@ -5,16 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
+<!-- to insert robto in search bar robto click -->
 
 <body class="bg-green-500 md:bg-red-300  lg:bg-blue-400">
     <!-- for medium secreen scize md is used -->
     <header>
-        <nav>
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900">First Link</a>
+            <a class="mr-5 hover:text-gray-900">Second Link</a>
+            <a class="mr-5 hover:text-gray-900">Third Link</a>
+            <a class="mr-5 hover:text-gray-900">Fourth Link</a>
 
         </nav>
+        <button class="inline-flex items-center bg-blue-100 border-0 py-1 px-3 focus:outline-none  rounded text-base mt-4 md:mt-0">Button
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+             <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+        </button>
     </header>
     <main>
         <article>
@@ -116,16 +127,53 @@
     </main>
     <footer>
         <div class="bg-gray-800 text-white py-6">
-            <div class="container mx-auto grid grid-cols-12">
-                <div class="col-span-6 space-y-4">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="col-span-6 md:col-span-6 space-y-4">
                     <h3 class="font-bold text-3xl ">website titile</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laudantium consectetur laboriosam beatae tenetur sapiente voluptates perferendis quae nulla obcaecati.
                     </p>
                     <p class="font-bold"> all right reserved &copy; 2025</p>
                 </div>
-                <div class="col-span-2"></div>
-                <div class="col-span-2"></div>
-                <div class="col-span-2"></div>
+                <div class="col-span-2">
+                    <h3> important link</h3>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">about us</a></li>
+                        <li><a href="">contact us</a></li>
+                        <li><a href="">help</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-span-2">
+                    <h3> important link</h3>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">about us</a></li>
+                        <li><a href="">contact us</a></li>
+                        <li><a href="">help</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-span-6 md:col-span-2">
+                    <h3 class="text-xl space-y-3">social link</h3>
+                    <ul class="space-y-3 mt-4">
+                        <li class="flex flex-col gap-2">
+                            <a href="">
+                                <i class="fa-brands fa-facebook"></i>FACEBOOK
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-instagram"></i>INSTAGRAM
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-linkedin"></i>LINKED-IN
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-github"></i>GITHUB
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
 
         </div>
